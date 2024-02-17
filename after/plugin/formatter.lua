@@ -1,6 +1,3 @@
-require("rhakura")
-
--- Formatter
 local formatter_prettier = {
   function()
     return {
@@ -25,6 +22,8 @@ require('formatter').setup({
     typescript = formatter_prettier,
     typescriptreact = formatter_prettier,
     json = formatter_prettier,
+    yaml = formatter_prettier,
+    astro = formatter_prettier,
     graphql = formatter_prettier
   }
 })

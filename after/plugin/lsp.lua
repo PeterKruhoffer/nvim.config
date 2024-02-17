@@ -3,15 +3,12 @@ local lsp = require('lsp-zero')
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  "tsserver",
-  "eslint",
-  "tailwindcss",
-  "prismals",
   "lua_ls",
+  "tsserver",
   "astro",
-  "volar",
-  "unocss",
 })
+
+vim.filetype.add({ extension = { templ = "templ" } })
 
 local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
